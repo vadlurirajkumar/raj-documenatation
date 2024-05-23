@@ -1,0 +1,26 @@
+### Connectors
+Connectors are threads, which are run continously in your server to get the configuration data, findings and issues.
+FlyingDuck provides two connectors `Sonarqube` and `Gitlab` 
+<br/>
+<div style={{ fontSize:"20px"}}>
+
+``` mdx copy
+
+sonarqube:
+    host: your_sonarqube_host
+    user: sonarqube_user
+    password: sonarqube_password
+    frequnecy: 600
+```
+</div>
+
+
+<div style={{ fontSize:"20px"}}>
+
+``` mdx copy
+gitlab:
+    url:  <https://example.com>
+    personal_access_token: pat12323455676
+    frequency: 600
+```
+</div>

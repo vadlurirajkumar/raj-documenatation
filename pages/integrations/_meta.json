@@ -1,0 +1,7 @@
+{
+    "github" : "GitHub",
+    "bitbucket" : "BitBucket",
+    "gitlab" : "GitLab",
+
+    "azure_devops" : "Azure DevOps"
+}

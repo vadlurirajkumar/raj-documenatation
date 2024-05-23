@@ -1,0 +1,82 @@
+# Duckdefender
+
+Duckdefender is an FlyingDuck agent that performs all the related scans on the provider to get the requiered outcome of secrets, sast and libraries.
+DuckDefender can be used to perform **Docker**, **SAST**, **Library Scan**, **secrets** etc related scans with the respective commands to which there are certain flags for different features.
+Each of the command has different functionalities to it.
+
+### USAGE
+Lets say you want to explore for all available options are there to the DuckDefender. Then you can run the
+" duckdefender -h" command. \
+Upon entering the above command you will able to see the options as shown in the below
+
+<div style={{ fontSize:"20px"}}>
+
+``` mdx copy
+Usage:
+  duckdefender [flags]
+  duckdefender [command]
+
+Available Commands:
+  docker      Scans your docker image
+  help        Help about any command
+  sast        This will scan your static application for any code findings
+  scan        scan scans a given repository for library vulnerability
+  secrets     Secrets is a command to scans your repo for any hardcoded secrets
+
+Flags:
+  -c, --connector string   This will make -use of connectors in daemon mode
+  -d, --daemon             This will make use of daemon
+  -z, --exitonerror        Mask the contents
+  -h, --help               help for duckdefender
+  -p, --password string    Enter the docker access token
+      --pre-commit         Performs secrets scan before commiting in IDE
+  -u, --user string        Enter the username
+
+Use "duckdefender [command] --help" for more information about a command.
+```
+</div>
+
+And also if you run the command "duckdefender [command] --help" this will give you the flags details available for the command entered.
+ 
+### Commands
+**docker**: Giving this command will help you into scanning your docker image and daemon with appropriate flags.\
+**sast**: With this command our agent will scan static application for any of the code findings.These findings can be get through s`semgrep` \
+**scan**: This basically scans for a given repository for any library vulnabirity and gives a detailed information on it.\
+**secrets**: Secrets is a command to scans your repo for any hardcoded secrets
+**help**: Help command will give the usage of the mentioned command
+
+
+### Flags
+
+Now lets just discuss in brief about each of the flags.
+There are a total of 7 flags that can be runned along with the command.
+
+
+<br/>
+
+<div> 
+
+- **-c or  --connector string** : This will make -use of connectors in daemon mode
+
+- **-d or --daemon** : This will make use of daemon mode, which work as a thread and asks for the any actions or tasks in the que that need to complete
+
+- **-z or --exitonerror** : when user wants to be strict on secrets this flag will find the secrets and print them
+
+- **-h or --help** : this will give the usage
+
+- **-p or --password**: used to enter the password
+
+- **--pre-commit** : It scans and prints the available sast before commiting the code
+
+- **-u or --user string** : It is used to provide the username
+
+</div>
+
+<div>
+
+
+</div>
+
+
+
+

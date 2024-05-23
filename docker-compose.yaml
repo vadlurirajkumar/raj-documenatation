@@ -1,0 +1,11 @@
+version: '3.0'
+services:
+  documentation-portal:
+    build:
+      context: .
+    container_name: documentation-portal
+    ports:
+      - 5018:3000
+    restart: always
+    environment:
+      - APP_ENV

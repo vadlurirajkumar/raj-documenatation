@@ -1,0 +1,5 @@
+{
+    "aws": "AWS",
+    "azure": "Azure",
+    "onpremise" : "On-premise"
+}
